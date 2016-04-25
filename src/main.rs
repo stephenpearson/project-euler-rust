@@ -13,6 +13,7 @@ See the License for the specific language governing permissions and
 limitations under the License.  */
 
 mod p1;
+mod p2;
 
 use std::env;
 
@@ -27,6 +28,7 @@ fn main() {
             Ok(n) => {
                 match n {
                     1 => { p1::init::run(args) }
+                    2 => { p2::init::run(args) }
                     _ => {
                         println!("Unknown problem number!");
                         usage(args);
