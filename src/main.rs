@@ -12,8 +12,10 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.  */
 
+mod common;
 mod p1;
 mod p2;
+mod p3;
 
 use std::env;
 
@@ -29,6 +31,7 @@ fn main() {
                 match n {
                     1 => { p1::init::run(args) }
                     2 => { p2::init::run(args) }
+                    3 => { p3::init::run(args) }
                     _ => {
                         println!("Unknown problem number!");
                         usage(args);
