@@ -8,11 +8,7 @@ fn is_palindrome(value: i32) -> bool {
         acc = acc / 10;
         reversed = reversed * 10 + digit;
     }
-    if reversed == value {
-        return true;
-    } else {
-        return false;
-    }
+    return reversed == value;
 }
 
 pub fn run(_: Vec<String>) {
