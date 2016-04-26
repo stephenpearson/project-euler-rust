@@ -16,6 +16,7 @@ mod common;
 mod p1;
 mod p2;
 mod p3;
+mod p4;
 
 use std::env;
 
@@ -32,6 +33,7 @@ fn main() {
                     1 => { p1::init::run(args) }
                     2 => { p2::init::run(args) }
                     3 => { p3::init::run(args) }
+                    4 => { p4::init::run(args) }
                     _ => {
                         println!("Unknown problem number!");
                         usage(args);
