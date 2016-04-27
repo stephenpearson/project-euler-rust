@@ -18,6 +18,7 @@ mod p2;
 mod p3;
 mod p4;
 mod p5;
+mod p126;
 
 use std::env;
 
@@ -31,11 +32,12 @@ fn main() {
         match (&args[1]).parse::<i32>() {
             Ok(n) => {
                 match n {
-                    1 => { p1::init::run(args) }
-                    2 => { p2::init::run(args) }
-                    3 => { p3::init::run(args) }
-                    4 => { p4::init::run(args) }
-                    5 => { p5::init::run(args) }
+                    1   => {   p1::init::run(args) }
+                    2   => {   p2::init::run(args) }
+                    3   => {   p3::init::run(args) }
+                    4   => {   p4::init::run(args) }
+                    5   => {   p5::init::run(args) }
+                    126 => { p126::init::run(args) }
                     _ => {
                         println!("Unknown problem number!");
                         usage(args);
